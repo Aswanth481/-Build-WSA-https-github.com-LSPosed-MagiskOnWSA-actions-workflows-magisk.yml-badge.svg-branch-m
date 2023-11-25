@@ -74,7 +74,7 @@ jobs:
                   if arch in f.filename.lower():
                       zip_name = f.filename
                       if not os.path.isfile(zip_name):
-                          print(f"unzipping to {zip_name}", flush=True)
+                          print(f"unzipping to {zip_name}", flush=True
                           zip.extract(f)
                           ver_no = zip_name.split("_")
                           ver = ver_no[1]
